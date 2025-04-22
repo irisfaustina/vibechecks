@@ -19,7 +19,7 @@ export function HeroImage({ className }: HeroImageProps) {
               <span className="ml-2 text-white/70">app.js</span>
             </div>
             
-            <div className="space-y-2">
+            <div className="space-y-2 text-left"> {/* Added text-left here */}
               <div className="flex">
                 <span className="text-blue-400 mr-4">import</span> 
                 <span className="text-yellow-300">&#123; useState &#125;</span> 
@@ -78,3 +78,4 @@ export function HeroImage({ className }: HeroImageProps) {
     </div>
   );
 }
+
