@@ -11,7 +11,13 @@ interface HeroProps {
 export function Hero({ className }: HeroProps) {
   return (
     <section className={cn("py-20 md:py-28 overflow-hidden relative", className)}>
-      <div className="container px-4 md:px-6">
+      {/* New background texture layers */}
+      <div className="absolute inset-0 z-0 opacity-10">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-vibe-purple/10 to-vibe-orange/10 animate-pulse-slow"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_rgba(155,135,245,0.1)_0%,_rgba(249,115,22,0.1)_100%)] opacity-50 animate-float"></div>
+      </div>
+      
+      <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center text-center space-y-10 animate-fade-in">
           <div className="space-y-4">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter max-w-3xl mx-auto">
