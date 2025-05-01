@@ -10,17 +10,20 @@ interface TechStackChartProps {
 export function TechStackChart({ data }: TechStackChartProps) {
   return (
     <ChartContainer config={{}} className="aspect-auto h-72">
-      <ResponsiveContainer>
-        <BarChart data={data}>
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Bar dataKey="value" fill="#9b87f5" />
-        </BarChart>
-      </ResponsiveContainer>
-      <ChartLegend>
-        <ChartLegendContent />
-      </ChartLegend>
+      {/* Wrap the chart content in a fragment to make it a single ReactElement */}
+      <>
+        <ResponsiveContainer>
+          <BarChart data={data}>
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Bar dataKey="value" fill="#9b87f5" />
+          </BarChart>
+        </ResponsiveContainer>
+        <ChartLegend>
+          <ChartLegendContent />
+        </ChartLegend>
+      </>
     </ChartContainer>
   );
 }
