@@ -9,7 +9,7 @@ interface ComingSoonProps {
 
 export function ComingSoon({ className }: ComingSoonProps) {
   return (
-    <section className={cn("py-16 bg-vibe-purple-light", className)} id="demo">
+    <section className={cn("py-16 bg-vibe-purple-light", className)}>
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-8 animate-fade-in">
           <div className="inline-flex items-center justify-center p-2 bg-white rounded-full shadow-sm animate-pulse-slow">
@@ -27,8 +27,8 @@ export function ComingSoon({ className }: ComingSoonProps) {
           </div>
           
           <div className="w-full max-w-md mx-auto flex flex-col sm:flex-row items-stretch gap-3">
-            <Button asChild size="lg" className="bg-gradient-to-r from-vibe-purple to-vibe-orange hover:opacity-90 text-white flex-1 py-4 sm:py-3">
-              <a href="https://forms.gle/wg4oR9qUBHcz3DWL6" target="_blank" rel="noopener noreferrer">
+            <Button asChild size="lg" className="bg-gradient-to-r from-vibe-purple to-vibe-orange hover:opacity-90 text-white flex-1">
+              <a href="https://forms.example.com/vibeChecks-signup" target="_blank" rel="noopener noreferrer">
                 Join the Waitlist
               </a>
             </Button>

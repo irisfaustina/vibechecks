@@ -18,9 +18,9 @@ export function Footer({ className }: FooterProps) {
           <div className="flex flex-col md:flex-row items-center gap-4 text-muted-foreground text-sm">
             <p>© {currentYear} vibeChecks. All rights reserved.</p>
             <div className="flex gap-4">
-{/*               <a href="#" className="hover:text-vibe-purple transition-colors">Privacy</a>
+              <a href="#" className="hover:text-vibe-purple transition-colors">Privacy</a>
               <a href="#" className="hover:text-vibe-purple transition-colors">Terms</a>
-              <a href="#" className="hover:text-vibe-purple transition-colors">Contact</a> */}
+              <a href="#" className="hover:text-vibe-purple transition-colors">Contact</a>
             </div>
           </div>
         </div>
