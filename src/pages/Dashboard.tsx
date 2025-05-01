@@ -98,7 +98,7 @@ export default function Dashboard() {
             </CardHeader>
             <CardContent>
               <ChartContainer config={{}} className="aspect-auto h-72">
-                <ResponsiveContainer width="100%" height="100%">
+                <ResponsiveContainer>
                   <BarChart data={mockTechStackData}>
                     <XAxis dataKey="name" />
                     <YAxis />
@@ -153,7 +153,7 @@ export default function Dashboard() {
                 medium: { color: "#7E69AB" },
                 high: { color: "#FF5252" }
               }} className="aspect-auto h-72">
-                <ResponsiveContainer width="100%" height="100%">
+                <ResponsiveContainer>
                   <BarChart data={mockVulnerabilityData}>
                     <XAxis dataKey="name" />
                     <YAxis />
