@@ -21,7 +21,9 @@ export function Navbar({ className }: NavbarProps) {
             Contact
           </Button>
           <Button className="bg-gradient-to-r from-vibe-purple to-vibe-orange text-white hover:opacity-90 transition-opacity">
-            Get Started
+            <a href="https://forms.gle/3U1Ad5rreBsyzusRA" target="_blank" rel="noopener noreferrer">
+                Get Started
+              </a>
           </Button>
         </nav>
       </div>
