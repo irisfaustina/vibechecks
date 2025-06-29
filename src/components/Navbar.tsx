@@ -1,4 +1,3 @@
-
 import { Logo } from "./Logo";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -13,13 +12,12 @@ export function Navbar({ className }: NavbarProps) {
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Logo />
         <nav className="flex items-center gap-4">
-          <Button variant="ghost" className="text-foreground hover:text-vibe-purple transition-colors">
-            About
-          </Button>
-          <Button variant="ghost" className="text-foreground hover:text-vibe-purple transition-colors">
-            Features
-          </Button>
-          <Button variant="ghost" className="text-foreground hover:text-vibe-purple transition-colors">
+          <Button variant="ghost" className="text-foreground hover:text-vibe-purple transition-colors" onClick={() => {
+            const section = document.getElementById('coming-soon');
+            if (section) {
+              section.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}>
             Contact
           </Button>
           <Button className="bg-gradient-to-r from-vibe-purple to-vibe-orange text-white hover:opacity-90 transition-opacity">

@@ -1,15 +1,15 @@
-
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { CheckCheck } from "lucide-react";
 
 interface ComingSoonProps {
   className?: string;
+  id?: string;
 }
 
-export function ComingSoon({ className }: ComingSoonProps) {
+export function ComingSoon({ className, id }: ComingSoonProps) {
   return (
-    <section className={cn("py-16 bg-vibe-purple-light", className)}>
+    <section id={id} className={cn("py-16 bg-vibe-purple-light", className)}>
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-8 animate-fade-in">
           <div className="inline-flex items-center justify-center p-2 bg-white rounded-full shadow-sm animate-pulse-slow">

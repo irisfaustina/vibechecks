@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { ComingSoon } from "@/components/ComingSoon";
@@ -10,7 +9,7 @@ const Index = () => {
       <Navbar className="sticky top-0" />
       <main className="flex-1">
         <Hero />
-        <ComingSoon />
+        <ComingSoon id="coming-soon" className="" />
       </main>
       <Footer />
     </div>
