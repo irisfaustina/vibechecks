@@ -29,6 +29,9 @@ export function Hero({ className }: HeroProps) {
           <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md justify-center">
             <Button size="lg" className="bg-gradient-to-r from-vibe-purple to-vibe-orange hover:opacity-90 text-white">
               Join Waitlist
+              <a href="https://forms.gle/3U1Ad5rreBsyzusRA" target="_blank" rel="noopener noreferrer">
+                Join the Waitlist
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="border-vibe-purple text-vibe-purple hover:bg-vibe-purple-light">
               Learn More

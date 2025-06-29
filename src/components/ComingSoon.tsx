@@ -28,7 +28,7 @@ export function ComingSoon({ className }: ComingSoonProps) {
           
           <div className="w-full max-w-md mx-auto flex flex-col sm:flex-row items-stretch gap-3">
             <Button asChild size="lg" className="bg-gradient-to-r from-vibe-purple to-vibe-orange hover:opacity-90 text-white flex-1">
-              <a href="https://forms.example.com/vibeChecks-signup" target="_blank" rel="noopener noreferrer">
+              <a href="https://forms.gle/3U1Ad5rreBsyzusRA" target="_blank" rel="noopener noreferrer">
                 Join the Waitlist
               </a>
             </Button>
