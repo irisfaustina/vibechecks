@@ -32,7 +32,14 @@ export function Hero({ className }: HeroProps) {
                 Join Waitlist
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-vibe-purple text-vibe-purple hover:bg-vibe-purple-light">
+            <Button size="lg" variant="outline" className="border-vibe-purple text-vibe-purple hover:bg-vibe-purple-light" onClick={
+              () => {
+                const section = document.getElementById('coming-soon');
+                if (section) {
+                  section.scrollIntoView({ behavior: 'smooth' });
+                }
+              }
+            }>
               Learn More
             </Button>
           </div>
